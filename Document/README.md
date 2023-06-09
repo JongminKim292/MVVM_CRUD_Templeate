@@ -1,6 +1,6 @@
 # MVVM
 
-![MVVMflowChart](/img/MVVM.jpg)
+![MVVMflowChart](/Document/img/MVVM.jpg)
 
 ## 1. Model
  
