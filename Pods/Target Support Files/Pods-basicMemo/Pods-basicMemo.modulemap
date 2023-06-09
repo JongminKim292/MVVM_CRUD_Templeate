@@ -1,0 +1,6 @@
+framework module Pods_basicMemo {
+  umbrella header "Pods-basicMemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
