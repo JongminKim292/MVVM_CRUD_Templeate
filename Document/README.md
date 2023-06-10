@@ -1,19 +1,18 @@
 # MVVM
 
 
-## 1. Model
+## Model
 Model classes are non-visual classes that encapsulate the app's data. Therefore, the model can be thought of as representing the app's [domain model](https://en.wikipedia.org/wiki/Domain_model), which usually includes a data model along with business and [validation](https://en.wikipedia.org/wiki/Data_validation) logic.
 
-## 2. View
+## View
 The view is responsible for defining the structure, layout, and appearance of what the user sees on screen. 
 
-* in iOS, Viewcontroller will be View
+* in iOS, Viewcontroller is also treat as View
 
-## 3. View Model
+## View Model
 The view model implements properties and commands to which the view can data bind to, and notifies the view of any state changes through change notification events.
 
-
-## 4. Process
+## Mechanism
 
 1. User Interaction: The process starts when the user interacts with the View (UI). This interaction can include actions such as clicking a button, entering data in a form, or selecting an item from a list.
 
@@ -33,9 +32,23 @@ The view model implements properties and commands to which the view can data bin
 
 ![MVVMflowChart](img/MVVM.jpg)
 
-## 4. Pro
+## Pros of MVVM
 
-1. 
+- Separation of concerns, making the codebase modular and maintainable.
+- Improved testability and easier unit testing.
+- Reusability of ViewModels for different Views.
+- Increased productivity with data binding and automatic UI updates.
+- Facilitates collaboration between designers and developers.
+
+## Cons of MVVM:
+
+- Introduction of complexity compared to simpler architectures.
+- Learning curve for developers new to the pattern.
+- Potential performance overhead depending on the implementation.
+    - for this Simple MVVM Memo app, MVVM might be not effective architecture
+- Framework limitations and potential dependencies.
+- Debugging complexity due to the separation of concerns.
+
 
 # Reference
 
