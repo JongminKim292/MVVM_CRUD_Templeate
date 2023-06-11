@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
+class MemoComposeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,7 @@ class ComposeViewController: UIViewController {
     }
 }
 
-extension ComposeViewController {
+extension MemoComposeViewController {
     func generateNavigationItem() {
         self.navigationItem.title = "New Memo"
     }

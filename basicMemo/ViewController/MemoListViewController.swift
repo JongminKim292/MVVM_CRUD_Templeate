@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MemoListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,8 +16,8 @@ class MainViewController: UIViewController {
     }
 }
 
-extension MainViewController {
+extension MemoListViewController {
     func navigationItemGenerate() {
-        self.navigationItem.title = "Memo"
+        self.navigationItem.title = "Memo List"
     }
 }
