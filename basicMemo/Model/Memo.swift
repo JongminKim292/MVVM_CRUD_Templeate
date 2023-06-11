@@ -10,7 +10,7 @@ import Foundation
 /*
  Basic Memo Structure
  
- - Param
+ - Properties
     - content : content of memo
     - insertDate : date of insert
     - id : timeinterval value of insertDate
