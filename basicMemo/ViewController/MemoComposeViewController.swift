@@ -1,13 +1,18 @@
 //
 //  UpdateViewController.swift
-//  basicMemo
 //
 //  Created by Jongmin Kim on 6/10/23.
 //
 
 import UIKit
 
-class MemoComposeViewController: UIViewController {
+class MemoComposeViewController: UIViewController, ViewModelBindableType {
+    
+    var viewModel: MemoComposeViewModel!
+    
+    func bindViewModel() {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
