@@ -26,6 +26,7 @@
 		64B05B0A2A32BD2000ABC7EE /* basicMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64B05B082A32BD2000ABC7EE /* basicMemo.xcdatamodeld */; };
 		64B05B0C2A32BD2100ABC7EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B05B0B2A32BD2100ABC7EE /* Assets.xcassets */; };
 		64B05B0F2A32BD2100ABC7EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64B05B0D2A32BD2100ABC7EE /* LaunchScreen.storyboard */; };
+		64D4AC612A38202600DDD4A3 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D4AC602A38202600DDD4A3 /* CommonViewModel.swift */; };
 		980F97FB02DCA98B90EE5A8D /* Pods_basicMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AFB6E9DC353FE426AEF8A6E /* Pods_basicMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		64B05B0B2A32BD2100ABC7EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64B05B0E2A32BD2100ABC7EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64B05B102A32BD2100ABC7EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64D4AC602A38202600DDD4A3 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		9AFB6E9DC353FE426AEF8A6E /* Pods_basicMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_basicMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E920C1E0B2853D38EC384D06 /* Pods-basicMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicMemo.debug.xcconfig"; path = "Target Support Files/Pods-basicMemo/Pods-basicMemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				640D9A292A355F7000AC6E28 /* ViewModelBindableType.swift */,
+				64D4AC602A38202600DDD4A3 /* CommonViewModel.swift */,
 				640D9A222A355A5A00AC6E28 /* MemoListViewModel.swift */,
 				640D9A242A355ED800AC6E28 /* MemoDetailViewModel.swift */,
 				640D9A262A355EFC00AC6E28 /* MemoComposeViewModel.swift */,
@@ -317,6 +320,7 @@
 				64A24CA32A37C86900AF263C /* SceneCoordinatorType.swift in Sources */,
 				640D9A232A355A5A00AC6E28 /* MemoListViewModel.swift in Sources */,
 				640D9A252A355ED800AC6E28 /* MemoDetailViewModel.swift in Sources */,
+				64D4AC612A38202600DDD4A3 /* CommonViewModel.swift in Sources */,
 				64A24C9E2A37963600AF263C /* TransitionModel.swift in Sources */,
 				64B05B022A32BD2000ABC7EE /* SceneDelegate.swift in Sources */,
 				640D9A152A34E63900AC6E28 /* Memo.swift in Sources */,
