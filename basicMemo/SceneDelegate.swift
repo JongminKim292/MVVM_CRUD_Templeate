@@ -13,22 +13,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
+        
+        let storage = MemoryStorage()
         window = UIWindow(frame: scene.coordinateSpace.bounds)
         window?.windowScene = scene
         let navigationController = UINavigationController(rootViewController: MemoListViewController())
+        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.navigationItem.largeTitleDisplayMode = .always
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+        let coordinator = SceneCoordinator(window: window!)
+        
+        let listViewModel = MemoListViewModel(title: "Memo List", sceneCoordinator: coordinator, storage: storage)
+        let listScene = Scene.list(listViewModel)
+        
+        coordinator.transition(to: listScene, using: .root, animated: false)
     }
+    
 
     func sceneDidDisconnect(_ scene: UIScene) {
-        // Called as the scene is being released by the system.
-        // This occurs shortly after the scene enters the background, or when its session is discarded.
-        // Release any resources associated with this scene that can be re-created the next time the scene connects.
-        // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
+        
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
