@@ -61,7 +61,6 @@ extension MemoListViewController {
         self.memoListTableView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         self.memoListTableView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         
-        let memoCell = UITableViewCell(style: .default, reuseIdentifier: "memoCell")
         self.memoListTableView.register(UITableViewCell.self, forCellReuseIdentifier: "memoCell")
     }
 }
